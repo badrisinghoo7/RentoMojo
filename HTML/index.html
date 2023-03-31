@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="../CSS/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./login.html" />
+  </head>
+  <body>
+    <div id="nav">
+      <div class="logo">
+        <img
+          src="../Images/WhatsApp Image 2023-03-28 at 18.25.03.jpg"
+          alt="Error"
+        />
+      </div>
+      <a href="#">HM</a>
+      <div class="location">
+        <option value="">location</option>
+      </div>
+      <input type="search" class="search" placeholder="search" />
+      <a href="#">Cart</a>
+      <button>Log in</button>
+      <button>Sign Up</button>
+    </div>
+    <!-- 
+     //- - - - - - - - - - - - - - - - - - - - - - - -  - -  - -->
+
+    <div class="container">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="../Images/Fitness-offer-banner-for-Web--2.jpg" alt="" />
+          </div>
+          <div class="swiper-slide"><img src="../Images/2.jpg" alt="" /></div>
+          <div class="swiper-slide"><img src="../Images/3.jpg" alt="" /></div>
+          <div class="swiper-slide"><img src="../Images/4.jpg" alt="" /></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+    <!-- - - - - - - - - - - - -  - - -- - - - - - -------------------------------------------------------------------------------- -->
+
+    <div class="items">
+      <div>
+        <img
+          src="https://cdn.dribbble.com/users/284827/screenshots/15228465/media/95e3f1c0869c1260dd666d6a682cdcf0.jpg?compress=1&resize=400x300"
+          alt=""
+        />
+        <h3>Packages</h3>
+      </div>
+      <div>
+        <img
+          src="https://i.pinimg.com/originals/9e/21/ac/9e21ac48c57cb2113b962e9959baa4ab.jpg"
+          alt=""
+        />
+        <h3>Furniture</h3>
+      </div>
+      <div>
+        <img
+          src="https://images-platform.99static.com//seu9nL7y_fc1Wove9WmwGdJssgw=/244x0:1756x1512/fit-in/500x500/99designs-contests-attachments/59/59407/attachment_59407259"
+          alt=""
+        />
+        <h3>Appliance</h3>
+      </div>
+      <div>
+        <img
+          src="https://i.pinimg.com/originals/70/ad/e0/70ade0c0b3d4cd8cf9c9e70e927afc0c.jpg"
+          alt=""
+        />
+        <h3>Fitness</h3>
+      </div>
+    </div>
+    <!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+
+    <div class="mid">
+      <h2>You'll Love to</h2>
+      <h3>take these home</h3>
+      <div>
+        <img src="../Images/shoerag.jpg" alt="Error" />
+        <div>
+          <h2>$ 189/mo</h2>
+          <button>See more</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------------------------------------------------------------------------------------------------------------- -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .head {
+        width: 100%;
+        height: 80px;
+        border: 0px solid red;
+        display: flex;
+        justify-content: space-around;
+        position: sticky;
+        top: 0;
+        background: white;
+      }
+      .cont {
+        width: 50%;
+        height: auto;
+        border: 0px solid green;
+        display: flex;
+      }
+      .cont1 {
+        width: 40%;
+        height: auto;
+        border: 0px solid green;
+        display: flex;
+        justify-content: space-between;
+      }
+      .cont > img {
+        width: 60px;
+      }
+      .cont > ul {
+        margin-top: 10px;
+        font-size: 15px;
+      }
+      .cont > ul > li {
+        display: inline-block;
+        list-style-type: none;
+        padding: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .cont > ul > li > a {
+        text-decoration: none;
+      }
+      .cont1 > ul {
+        margin-top: 10px;
+        font-size: 15px;
+        margin-left: 20px;
+      }
+      .cont1 > ul > li {
+        display: inline-block;
+        list-style-type: none;
+        padding: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      #cont2 {
+        width: 50%;
+        height: 20px;
+        margin-top: 20px;
+      }
+
+      h2 {
+        text-align: center;
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: orangered;
+        padding-top: 15px;
+      }
+      .signup-box {
+        width: 350px;
+        height: 500px;
+        margin: auto;
+        border-radius: 5px;
+      }
+      form {
+        width: 300px;
+        margin-left: 20px;
+      }
+      label {
+        display: flex;
+        margin-top: 10px;
+        font-size: 20px;
+      }
+      input {
+        width: 100%;
+        padding: 12px;
+        border: none;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      input[type="submit"] {
+        width: 327px;
+        height: 40px;
+        margin-top: 20px;
+        background-color: orangered;
+        color: white;
+        font-size: 18px;
+      }
+      p {
+        text-align: center;
+        font-size: 20px;
+        padding-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="signup-box">
+      <h2>Sign Up</h2>
+      <form id="form">
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your full name" id="name" />
+        <label>Email</label>
+        <input type="text" placeholder="Enter your email" id="email" />
+        <label>Password</label>
+        <input
+          type="password"
+          placeholder="Enter your Password"
+          id="password"
+        />
+        <label>Confirmed Password</label>
+        <input
+          type="password"
+          placeholder="Enter Confirmed Password"
+          id="confirmedPassword"
+        />
+        <input type="submit" value="Sign Up" />
+      </form>
+      <p>
+        By clicking sign up, I accept the Myntra<br />
+        <a href="#">Terms of Services</a> and acknowledged the<a href="#"
+          >Policy Privacy</a
+        >
+      </p>
+    </div>
+    <p>Already have an account?<a href="./login.html">Login here</a></p>
+  </body>
+  <script>
+    let LSData = JSON.parse(localStorage.getItem("signup")) || [];
+    let form = document.querySelector("form");
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      let obj = {
+        Name: document.getElementById("name").value,
+        Email: document.getElementById("email").value,
+        Password: document.getElementById("password").value,
+        ConfirmedPassword: document.getElementById("confirmedPassword").value,
+      };
+      if (
+        obj.Name == "" ||
+        obj.Email == "" ||
+        obj.Password == "" ||
+        obj.ConfirmedPassword == ""
+      ) {
+        alert("some fields are empty");
+      } else {
+        LSData.push(obj);
+        localStorage.setItem("signup", JSON.stringify(LSData));
+        window.location.href = "login.html";
+        alert("sign-up successful");
+      }
+    });
+  </script>
+</html>
