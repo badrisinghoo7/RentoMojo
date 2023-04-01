@@ -20,14 +20,14 @@
           alt="Error"
         />
       </div>
-      <a href="#">HM</a>
+      <a href="/index.html">HM</a>
       <div class="location">
         <option value="">location</option>
       </div>
-      <input type="search" class="search" placeholder="search" />
-      <a href="#">Cart</a>
-      <button>Log in</button>
-      <button>Sign Up</button>
+      <input type="search" class="search" placeholder="Search" />
+      <button><a href="./HTML/cart.html">Cart</a></button>
+      <button><a href="./HTML/login.html">Log in</a></button>
+     <button> <a href="./HTML/signup.html">Sign up</a></button>
     </div>
     <!-- 
      //- - - - - - - - - - - - - - - - - - - - - - - -  - -  - -->
@@ -39,8 +39,7 @@
         <div class="swiper-wrapper">
           <!-- Slides -->
           <div class="swiper-slide">
-            <img src="../Images/Fitness-offer-banner-for-Web--2.jpg" alt="" />
-          </div>
+            <img src="../Images/Fitness-offer-banner-for-Web--2.jpg" alt="" /></div>
           <div class="swiper-slide"><img src="../Images/2.jpg" alt="" /></div>
           <div class="swiper-slide"><img src="../Images/3.jpg" alt="" /></div>
           <div class="swiper-slide"><img src="../Images/4.jpg" alt="" /></div>
@@ -86,20 +85,92 @@
       </div>
     </div>
     <!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
-
-    <div class="mid">
-      <h2>You'll Love to</h2>
-      <h3>take these home</h3>
-      <div>
-        <img src="../Images/shoerag.jpg" alt="Error" />
-        <div>
-          <h2>$ 189/mo</h2>
-          <button>See more</button>
-        </div>
-      </div>
-    </div>
+    <h2 class="pro">Products</h2>
+    <div id="products"></div>
 
     <!-- ---------------------------------------------------------------------------------------------------------------- -->
+    <div id="footer">
+      <div id="p2">
+        
+        <div>
+          <h3>EXPERIENCE HM APP ON MOBILE</h3>
+          <button id="app">
+            <a
+              id="play"
+              href="#"
+              >Google Play</a
+            >
+          </button>
+          <button id="app">
+            <a
+              id="play"
+              href="#"
+              >App Store</a
+            >
+          </button>
+        </div>
+        <div>
+          <h3 id="green">
+            <b>100% Original</b> Guarantee for all products at HM.com
+          </h3>
+          <h3 id="green">
+            <b>Return Within 30 days</b> of recieving your order
+          </h3>
+        </div>
+      </div>
+      <div id="p3">
+        <h3>HM APP</h3>
+        <h4>
+          HM, India’s no. 1 online fashion destination justifies its fashion
+          relevance by bringing something new and chic to the table on the
+          daily. Fashion trends seem to change at lightning speed, yet the HM
+          shopping app has managed to keep up without any hiccups. In addition,
+          HM has vowed to serve customers to the best of its ability by
+          introducing its first-ever loyalty program, The HM Insider. Gain
+          access to priority delivery, early sales, lucrative deals and other
+          special perks on all your shopping with the HM app. Download the HM
+          app on your Android or IOS device today and experience shopping like
+          never before!
+        </h4>
+        <h3>HISTORY OF HM</h3>
+        <h4>
+          Becoming India’s no. 1 fashion destination is not an easy feat.
+          Sincere efforts, digital enhancements and a team of dedicated
+          personnel with an equally loyal customer base have made HM the online
+          platform that it is today. The original B2B venture for personalized
+          gifts was conceived in 2007 but transitioned into a full-fledged
+          ecommerce giant within a span of just a few years. By 2012, HM had
+          introduced 350 Indian and international brands to its platform, and
+          this has only grown in number each passing year. Today HM sits on top
+          of the online fashion game with an astounding social media following,
+          a loyalty program dedicated to its customers, and tempting,
+          hard-to-say-no-to deals. The HM shopping app came into existence in
+          the year 2015 to further encourage customers’ shopping sprees.
+          Download the app on your Android or IOS device this very minute to
+          experience fashion like never before
+        </h4>
+
+        <h3>SHOP ONLINE AT HM WITH COMPLETE CONVENIENCE</h3>
+        <h4>
+          Another reason why HM is the best of all online stores is the complete
+          convenience that it offers. You can view your favourite brands with
+          price options for different products in one place. A user-friendly
+          interface will guide you through your selection process. Comprehensive
+          size charts, product information and high-resolution images help you
+          make the best buying decisions. You also have the freedom to choose
+          your payment options, be it card or cash-on-delivery. The 30-day
+          returns policy gives you more power as a buyer. Additionally, the
+          try-and-buy option for select products takes customer-friendliness to
+          the next level. Enjoy the hassle-free experience as you shop
+          comfortably from your home or your workplace. You can also shop for
+          your friends, family and loved-ones and avail our gift services for
+          special occasions.
+        </h4>
+        <h4>
+          Thanks for visiting our site , Wishing you a very happy day from us.
+        </h4>
+      </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
@@ -122,6 +193,127 @@
           prevEl: ".swiper-button-prev",
         },
       });
+
+      let API = {
+        data: [
+          {
+            name: "Classy Chair",
+            brand: "Huetrap",
+            img: "https://th.bing.com/th/id/OIP.nM95v_vGolSoaL-TqVh1RQHaMK?pid=ImgDet&rs=1",
+            category: "Indore Furniture",
+            costume: "Brown Coloured Wood Chair",
+            color: "brown",
+            price: "Rs.779",
+            discountedprice: "700",
+            discount: "10% off",
+            id: "1",
+          },
+          {
+            name: "Sofa Set",
+            brand: "Sofa",
+            img: "https://th.bing.com/th/id/OIP.nM95v_vGolSoaL-TqVh1RQHaMK?pid=ImgDet&rs=1",
+            category: "Indore Furniture",
+            costume: "Brown Coloured Wood Chair",
+            color: "brown",
+            price: "Rs.779",
+            discountedprice: "700",
+            discount: "10% off",
+            id: "2",
+          },
+          {
+            name: "King Size Bed",
+            brand: "Bed",
+            img: "https://th.bing.com/th/id/OIP.nM95v_vGolSoaL-TqVh1RQHaMK?pid=ImgDet&rs=1",
+            category: "Indore Furniture",
+            costume: "Brown Coloured Wood Chair",
+            color: "brown",
+            price: "Rs.779",
+            discountedprice: "700",
+            discount: "10% off",
+            id: "4",
+          },
+          {
+            name: "Dining Table",
+            brand: "Table",
+            img: "https://th.bing.com/th/id/OIP.nM95v_vGolSoaL-TqVh1RQHaMK?pid=ImgDet&rs=1",
+            category: "Indore Furniture",
+            costume: "Brown Coloured Wood Chair",
+            color: "brown",
+            price: "Rs.779",
+            discountedprice: "700",
+            discount: "10% off",
+            id: "5",
+          },
+          {
+            name: "Almirah",
+            brand: "Pata Nahi",
+            img: "https://th.bing.com/th/id/OIP.nM95v_vGolSoaL-TqVh1RQHaMK?pid=ImgDet&rs=1",
+            category: "Indore Furniture",
+            costume: "Brown Coloured Wood Chair",
+            color: "brown",
+            price: "Rs.779",
+            discountedprice: "700",
+            discount: "10% off",
+            id: "6",
+          },
+          {
+            name: "Abcd Set",
+            brand: "Bedsheet",
+            img: "https://th.bing.com/th/id/OIP.nM95v_vGolSoaL-TqVh1RQHaMK?pid=ImgDet&rs=1",
+            category: "Indore Furniture",
+            costume: "Brown Coloured Wood Chair",
+            color: "brown",
+            price: "Rs.779",
+            discountedprice: "700",
+            discount: "10% off",
+            id: "7",
+          },
+        ],
+      };
+
+      let bagdata = JSON.parse(localStorage.getItem("bag")) || [];
+      let container = document.getElementById("products");
+      let fetchedData = [];
+      fetchedData = API.data;
+      function display() {
+        container.innerHTML = "";
+        fetchedData.forEach(function (element) {
+          let card = document.createElement("div");
+          let img = document.createElement("img");
+          let brand = document.createElement("h2");
+          let costume = document.createElement("h3");
+          let price = document.createElement("h4");
+          let show = document.createElement("button");
+          let category = document.createElement("h3");
+
+          img.setAttribute("src", element.img);
+          brand.innerText = element.brand;
+          costume.innerText = element.costume;
+          price.innerText = element.price;
+          category.innerText = element.category;
+          show.innerText = "Add To Bag";
+          show.addEventListener("click", function () {
+            if (check(element)) {
+              alert("Product Already in Bag");
+            } else {
+              bagdata.push({ ...element, quantity: 1 });
+              localStorage.setItem("bag", JSON.stringify(bagdata));
+              alert("Product Added To Bag");
+            }
+          });
+          function check(element) {
+            for (let i = 0; i < bagdata.length; i++) {
+              if (element.id === bagdata[i].id) {
+                return true;
+              }
+            }
+            return false;
+          }
+          card.append(img, brand, costume, category, price, show);
+          container.append(card);
+        });
+      }
+      display(fetchedData);
     </script>
   </body>
 </html>

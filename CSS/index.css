@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-   margin-left: 50px;
+   /* margin-left: 50px; */
 }
 #nav {
     width: 90%;
@@ -10,6 +10,7 @@
     align-items: center;
     background-color: antiquewhite;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: auto;
 }
 #nav button{
     width: 100px;
@@ -33,6 +34,9 @@
 #nav .search{
     width: 700px;
     height: 30px;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 10px;
 }
 #nav .search:hover{
     background-color: rgb(152, 152, 171);
@@ -53,8 +57,8 @@
     /* justify-content:center; */
     /* border: 2px solid red; */
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    margin: 10px;
-    /* box-sizing: border-box; */
+    margin-left: 75px;
+   
 }
 .swiper{
     width: 100%;
@@ -81,10 +85,15 @@
     display: grid;
     grid-template-columns: repeat(4,1fr);
     align-items: center;
+    /* gap: 10px; */
+    margin-top: 50px;
+    text-align: center;
 }
 .items img {
-    width: 200px;
-    /* align-items: center; */
+    margin-top: 50px;
+    width: 100%;
+    height: 250px;
+   
 }
 .items div:hover{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -92,4 +101,90 @@
 }
 .item > div > h3{
     text-align: center;
+}
+.pro{
+    text-align: center;
+    font-size:50px;
+    color: rgb(42, 108, 108);
+    background-color: aquamarine;
+}
+
+
+
+
+
+
+#products{
+    display: grid;
+    grid-template-columns: repeat(4,300px);
+    gap:10px;
+    justify-content: space-around;
+}
+#products>div{
+    text-align: center;
+    border:1px solid black;
+    padding:5px;
+    border-radius: 5px;
+    /* margin: auto; */
+}
+#products>div>img{
+    width:100%;
+    height:300px;
+}
+
+
+
+/* footer */
+
+
+#p2{
+    display: flex;
+    width:70%;
+    /* border: 1px solid red; */
+    margin: auto;
+    /* gap:200px; */
+}
+#p3{
+    width:70%;
+    margin: auto;
+    /* border: 1px solid green; */
+}
+#p2>div{
+    /* border:1px solid white; */
+    width:70%;
+}
+#p2>div>h4>a{
+    color: rgb(212, 104, 104);
+}
+#footer{
+    background-color: rgb(202, 205, 205);
+    width:100%;
+    height:1000px;
+    /* border:1px solid black; */
+    margin: auto;
+    margin-top: 10px;
+}
+#green{
+    color:green;
+}
+#play{
+    color: white;
+    background-color: black;
+}
+#app{
+    background-color: black;
+    border-radius: 5px;
+}
+#p3>h4{
+    color: rgb(212, 104, 104);
+}
+#p3>h3{
+    color:purple;
+}
+#p2>div>h3{
+    color:purple;
+}
+#p2>div>h4>a:hover{
+    color: brown;
+    transition: 0.8s;
 }

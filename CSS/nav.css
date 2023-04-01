@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+   /* margin-left: 50px; */
+}
+#nav {
+    width: 90%;
+    display: flex;
+    /* border: 3px solid red; */
+    justify-content: space-around;
+    align-items: center;
+    background-color: antiquewhite;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: auto;
+}
+#nav button{
+    width: 100px;
+    height: 25px;
+    background-color: tomato;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: none;
+}
+#nav button:hover{
+    cursor: pointer;
+    background-color: whitesmoke;
+    color: red;
+    border: 2px solid red;
+    font-size: 10px;
+}
+#nav img{
+    width: 70px;
+    margin-left: 2px;
+}
+#nav .search{
+    width: 700px;
+    height: 30px;
+}
+#nav .search:hover{
+    background-color: rgb(152, 152, 171);
+    cursor: pointer;
+}
