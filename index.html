@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./login.html" />
   </head>
   <body>
+    <!-- <div class="back"></div> -->
     <div id="nav">
       <div class="logo">
         <img
@@ -21,8 +22,11 @@
         />
       </div>
       <a href="/index.html">HM</a>
-      <div class="location">
-        <option value="">location</option>
+      <div>
+        <div id="location">
+          <p id="change_location">Jaipur</p><img
+              src="https://cdn.icon-icons.com/icons2/1904/PNG/512/downarrow_121316.png" alt="">
+      </div>
       </div>
       <input type="search" class="search" placeholder="Search" />
       <button><a href="./HTML/cart.html">Cart</a></button>
@@ -203,70 +207,82 @@
             category: "Indore Furniture",
             costume: "Brown Coloured Wood Chair",
             color: "brown",
-            price: "Rs.779",
-            discountedprice: "700",
+            price: "Rs.2999",
+            discountedprice: "300",
             discount: "10% off",
             id: "1",
           },
           {
             name: "Sofa Set",
             brand: "Sofa",
-            img: "https://th.bing.com/th/id/OIP.nM95v_vGolSoaL-TqVh1RQHaMK?pid=ImgDet&rs=1",
+            img: "https://media.istockphoto.com/id/861282844/photo/the-interior-furniture-white-background-and-living-3d-rendering.jpg?s=170667a&w=0&k=20&c=q9ZBKE0rMMaJ3ymPYNnxfYPl_h86M4IlPFWsNewer5A=",
             category: "Indore Furniture",
             costume: "Brown Coloured Wood Chair",
             color: "brown",
-            price: "Rs.779",
-            discountedprice: "700",
+            price: "Rs.12599",
+            discountedprice: "1259",
             discount: "10% off",
             id: "2",
           },
           {
             name: "King Size Bed",
             brand: "Bed",
-            img: "https://th.bing.com/th/id/OIP.nM95v_vGolSoaL-TqVh1RQHaMK?pid=ImgDet&rs=1",
+            img: "https://www.ikea.com/images/8d/63/8d633fd519dcd48e1730490d35d663b9.jpg?f=s",
             category: "Indore Furniture",
             costume: "Brown Coloured Wood Chair",
             color: "brown",
-            price: "Rs.779",
-            discountedprice: "700",
+            price: "Rs.30999",
+            discountedprice: "3099",
             discount: "10% off",
             id: "4",
           },
           {
             name: "Dining Table",
             brand: "Table",
-            img: "https://th.bing.com/th/id/OIP.nM95v_vGolSoaL-TqVh1RQHaMK?pid=ImgDet&rs=1",
+            img: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/61MAzfI+4vL._SX425_.jpg",
             category: "Indore Furniture",
             costume: "Brown Coloured Wood Chair",
             color: "brown",
-            price: "Rs.779",
-            discountedprice: "700",
+            price: "Rs.8999",
+            discountedprice: "899",
             discount: "10% off",
             id: "5",
           },
           {
             name: "Almirah",
-            brand: "Pata Nahi",
-            img: "https://th.bing.com/th/id/OIP.nM95v_vGolSoaL-TqVh1RQHaMK?pid=ImgDet&rs=1",
+            brand: "Golden",
+            img: "https://www.wakefit.co/blog/wp-content/uploads/2022/09/Warddrobe-furniture-1.jpg",
             category: "Indore Furniture",
             costume: "Brown Coloured Wood Chair",
             color: "brown",
-            price: "Rs.779",
-            discountedprice: "700",
+            price: "Rs.5699",
+            discountedprice: "569",
             discount: "10% off",
             id: "6",
           },
           {
-            name: "Abcd Set",
-            brand: "Bedsheet",
-            img: "https://th.bing.com/th/id/OIP.nM95v_vGolSoaL-TqVh1RQHaMK?pid=ImgDet&rs=1",
+            name: "Set",
+            brand: "century",
+            img: "https://media.designcafe.com/wp-content/uploads/2021/12/27144355/design-cafe-modular-furniture-benefits.jpg",
             category: "Indore Furniture",
             costume: "Brown Coloured Wood Chair",
             color: "brown",
-            price: "Rs.779",
-            discountedprice: "700",
+            price: "Rs.8564",
+            discountedprice: "586",
             discount: "10% off",
             id: "7",
+          },
+          {
+            name: "Sofa",
+            brand: "century",
+            img: "https://static.vecteezy.com/system/resources/thumbnails/004/586/602/small/sofa-furniture-and-modern-room-design-minimal-3d-rendering-photo.jpg",
+            category: "Indore Furniture",
+            costume: "Brown Coloured Wood Chair",
+            color: "brown",
+            price: "Rs.7789",
+            discountedprice: "778",
+            discount: "10% off",
+            id: "8",
           },
         ],
       };
@@ -314,6 +330,7 @@
         });
       }
       display(fetchedData);
+      
     </script>
   </body>
 </html>

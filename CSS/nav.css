@@ -11,6 +11,7 @@
     background-color: antiquewhite;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin: auto;
+    margin-bottom: 10px;
 }
 #nav button{
     width: 100px;
