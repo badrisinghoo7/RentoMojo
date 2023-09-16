@@ -6,10 +6,13 @@ import { cartreducer } from "./Cartapp/reducer";
 import { likereducer } from "./Likeapp/reducer";
 
 const rootreducer = {
-    productsreducer:reducer,
-    question:questionreducer,
-    cartreducer:cartreducer,
-    likereducer:likereducer
-}
+  productsreducer: reducer,
+  question: questionreducer,
+  cartreducer: cartreducer,
+  likereducer: likereducer,
+};
 
-export const store = legacy_createStore(combineReducers(rootreducer), applyMiddleware(thunk));
+export const store = legacy_createStore(
+  combineReducers(rootreducer),
+  applyMiddleware(thunk)
+);

@@ -16,10 +16,10 @@ export const postdatatocartapi = (data) => (dispatch) => {
   dispatch({ type: POST_DATA_TO_CART_LOADING });
   console.log("data", data);
   axios
-    .post("https://rentomojo-server.onrender.com/cartitems", data)
+    .post("https://rentomojo-app.onrender.com/cartitems", data)
     .then(() => {
       axios
-        .get("https://rentomojo-server.onrender.com/cartitems")
+        .get("https://rentomojo-app.onrender.com/cartitems")
         .then((res) =>
           dispatch({ type: POST_DATA_TO_CARTS_SUCCESS, payload: res.data })
         )
@@ -33,7 +33,7 @@ export const getdataforcartapi = () => (dispatch) => {
   dispatch({ type: GET_DATA_FOR_CART_LOADING });
  
   axios
-    .get("https://rentomojo-server.onrender.com/cartitems")
+    .get("https://rentomojo-app.onrender.com/cartitems")
     .then((res) =>
       dispatch({ type: GET_DATA_FOR_CART_SUCCESS, payload: res.data })
     )
@@ -45,10 +45,10 @@ export const getdataforcartapi = () => (dispatch) => {
 export const deletecartitemapi = (id) => (dispatch) => {
   dispatch({type:DELETE_DATA_FROM_CART_LOADING})
 
-  axios.delete(`https://rentomojo-server.onrender.com/cartitems/${id}`)
+  axios.delete(`https://rentomojo-app.onrender.com/cartitems/${id}`)
   .then((res) => {
     axios
-      .get("https://rentomojo-server.onrender.com/cartitems")
+      .get("https://rentomojo-app.onrender.com/cartitems")
       .then((res) =>
         dispatch({ type: DELETE_DATA_FROM_CART_SUCCESS, payload: res.data })
       )

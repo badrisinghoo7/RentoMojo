@@ -15,7 +15,7 @@ export const getquestionapi = () => (dispatch) => {
   dispatch({ type: GET_QUESTION_LOADING });
 
   axios
-    .get("https://rentomojo-server.onrender.com/questions")
+    .get("https://rentomojo-app.onrender.com/questions")
     .then((res) => dispatch({ type: GET_QUESTION_SUCCESS, payload: res.data }))
     .then(() => dispatch({ type: GET_QUESTION_ERROR }));
 };
@@ -24,12 +24,12 @@ export const postquestionapi = (data) => (dispatch) => {
   dispatch({ type: POST_QUESTION_LOADING });
 
   axios
-    .post("https://rentomojo-server.onrender.com/questions", {
+    .post("https://rentomojo-app.onrender.com/questions", {
       data,
     })
     .then(() => {
       axios
-        .get("https://rentomojo-server.onrender.com/questions")
+        .get("https://rentomojo-app.onrender.com/questions")
         .then((res) =>
           dispatch({ type: POST_QUESTION_SUCCESS, payload: res.data })
         )
@@ -41,10 +41,10 @@ export const deletequestionapi = (id) => (dispatch) => {
   dispatch({ type: DELETE_QUESTION_LOADING });
 
   axios
-    .delete(`https://rentomojo-server.onrender.com/questions/${id}`)
+    .delete(`https://rentomojo-app.onrender.com/questions/${id}`)
     .then(() => {
       axios
-        .get("https://rentomojo-server.onrender.com/questions")
+        .get("https://rentomojo-app.onrender.com/questions")
         .then((res) =>
           dispatch({ type: DELETE_QUESTION_SUCCESS, payload: res.data })
         )
