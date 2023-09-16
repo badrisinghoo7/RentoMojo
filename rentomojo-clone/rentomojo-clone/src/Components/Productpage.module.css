@@ -1,0 +1,11 @@
+.leftdiv {
+  overflow: scroll;
+}
+
+.leftdiv::-webkit-scrollbar {
+  display: none;
+}
+
+.pardiv:hover .delbtn{
+  display:block
+}
