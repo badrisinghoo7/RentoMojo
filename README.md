@@ -1,4 +1,3 @@
-# -scared-note-9891
 # RentoMojo.com
 
 <p>	RentoMojo is an online rental platform that provides furniture, appliances and electronics (mobiles, laptops) on a monthly rental basis. </p>
@@ -6,7 +5,7 @@
 ## About this project.
 
 This project is a Solo Project during construct week of unit 5 at Masai School.
-Netlify link:- https://rentomojo-clone.netlify.app
+Netlify link:- https://elegant-banoffee-7a39a4.netlify.app/
 
 ## Solo Project.
 
