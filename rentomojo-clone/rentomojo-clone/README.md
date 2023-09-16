@@ -5,7 +5,7 @@
 ## About this project.
 
 This project is a Solo Project during construct week of unit 5 at Masai School.
-Netlify link:- https://rentomojo-clone.netlify.app
+Netlify link:- https://elegant-banoffee-7a39a4.netlify.app/
 
 ## Solo Project.
 
